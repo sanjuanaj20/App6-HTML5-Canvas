@@ -69,9 +69,29 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <div id="content" class="w3-container">
 	<p> 
- 
-		<canvas id="a" width="300" height="225" style="border:1px solid #000000;">></canvas>
-		var canvas = document.getElementById('a');
+ <!-- This is a skeleton template-->
+		<html>
+		  <head>
+		    <meta charset="utf-8"/>
+		    <title>Canvas</title>
+		    <script type="text/javascript">
+		      function draw() {
+			var canvas = document.getElementById('canvas');
+			if (canvas.getContext) {
+			  var ctx = canvas.getContext('2d');
+			}
+		      }
+		    </script>
+		    <style type="text/css">
+		      canvas { border: 1px solid black; }
+		    </style>
+		  </head>
+		  <body onload="draw();">
+		    <canvas id="canvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
+		  </body>
+		</html>
+		
+	
 		
 	<p> 
 		
