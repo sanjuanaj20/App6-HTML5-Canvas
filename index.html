@@ -83,8 +83,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			    ctx.font = "48px serif";
 			    ctx.textBaseline = "hanging";
 			    ctx.strokeText("San Juana Juarez", 0, 50);
-			    ctx.
-			}
+			    ctx.drawImage(img, 0, 0);
+    			    ctx.beginPath();
+			    ctx.moveTo(30, 96);
+			    ctx.lineTo(70, 66);
+			    ctx.lineTo(103, 76);
+			    ctx.lineTo(170, 15);
+			    ctx.stroke();
+			  };
+  			  img.src = 'https://mdn.mozillademos.org/files/5395/backdrop.png';
 		      }
 		    </script>
 		    <style type="text/css">
