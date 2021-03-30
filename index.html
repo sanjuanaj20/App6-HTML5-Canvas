@@ -83,19 +83,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			    ctx.font = "35px serif";
 			    ctx.textBaseline = "hanging";
 			    ctx.strokeText("San Juana Juarez", 10, 10);
+		      }
+			function draw() {
+			  var ctx = document.getElementById('canvas').getContext('2d');
 			  var img = new Image();
 			  img.onload = function() {
 			    ctx.drawImage(img, 0, 0);
-    			    ctx.beginPath();
+			    ctx.beginPath();
 			    ctx.moveTo(30, 96);
 			    ctx.lineTo(70, 66);
 			    ctx.lineTo(103, 76);
 			    ctx.lineTo(170, 15);
 			    ctx.stroke();
 			  };
-  			  img.src = 'https://gogivo.com/wp-content/uploads/2020/09/Gogivo_5367_Wild-flower-Preview.jpg';
-		      }
-		    </script>
+			  img.src = 'https://mdn.mozillademos.org/files/5395/backdrop.png';
+			}     
+					    </script>
 		    <style type="text/css">
 		      canvas { border: 1px solid black; }
 		    </style>
