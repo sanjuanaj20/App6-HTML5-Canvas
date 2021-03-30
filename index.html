@@ -80,15 +80,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			if (canvas.getContext) {
 			  var ctx = canvas.getContext('2d');
 			    ctx.fillRect(25, 25, 100, 100);
+			function draw() {
+			  var ctx = document.getElementById('canvas').getContext('2d');
+			  	ctx.font = '48px serif';
+			  	ctx.fillText('San Juana Juarez', 10, 50);
 			}
-			function draw(){
-				var canvas = document.getElementById('canvas');
-				if (canvas.getContext) {
-				  var ctx = canvas.getContext('2d');
-				    ctx.font = "30px Arial";
-				    ctx.fillText("San Juana Juarez",10,50);
-			    }
 
+			}
 		      }
 		    </script>
 		    <style type="text/css">
