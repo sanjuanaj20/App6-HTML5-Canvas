@@ -78,14 +78,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	    <meta charset="utf-8"/>
 	    <title>Canvas</title>
 	    <script type="text/javascript">
-	      window.onload = function() {
-		function draw() {
+	function draw() {
 		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
 		  var ctx = canvas.getContext('2d');
 			// Draw rectangle
 			ctx.fillRect(50, 50, 100, 100);
-			
 			
 			// Draw my name
 			ctx.font = "35px serif";
@@ -101,7 +99,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			
 			// Clear part of the canvas
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
-			
+		
+		window.onload = function() {
 		  var tulips = document.getElementById("tulips");
   			ctx.drawImage(tulips, 200, 100);
 		}
