@@ -79,11 +79,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	    <title>Canvas</title>
 	    <script type="text/javascript">
 	function draw() {
-		var img = document.getElementById("tulips"); 
 		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
 		  var ctx = canvas.getContext('2d');
-		
 			// Draw rectangle
 			ctx.fillRect(50, 50, 100, 100);
 			
@@ -102,6 +100,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			// Clear part of the canvas
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 			
+		var img = document.getElementById("tulips"); 
+
 			// Draw image
   			ctx.drawImage(img,150,150);
 		}
