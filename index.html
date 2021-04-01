@@ -90,27 +90,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			    ctx.lineTo(103, 76);
 			    ctx.lineTo(170, 15);
 			    ctx.stroke();
-			  };
+			  var img = document.getElementById("scream");
+		  	    ctx.drawImage(img,10,10);
 			}
-		<html>
-		<body>
-
-		<p>Image to use:</p>
-		<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
-
-		<p>Canvas to fill:</p>
-		<canvas id="canvas" width="250" height="300"
-		style="border:1px solid #d3d3d3;">
-		Your browser does not support the HTML canvas tag.</canvas>
-
+			  };
 		<p><button onclick="canvas()">Try it</button></p>
-
-		<script>
-		function myCanvas() {
-		  var c = document.getElementById("canvas");
-		  var ctx = c.getContext("2d");
-		  var img = document.getElementById("scream");
-		  ctx.drawImage(img,10,10);
 		}
 		</script>
 
@@ -124,33 +108,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		  <body onload="draw();">
 		    <canvas id="canvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
 		  </body>
-		</html>
-		
-	<html>
-		<head>
-		<style>
-		.button {
-		  border: none;
-		  color: white;
-		  padding: 15px 32px;
-		  text-align: center;
-		  text-decoration: none;
-		  display: inline-block;
-		  font-size: 16px;
-		  margin: 4px 2px;
-		  cursor: pointer;
-		}
-
-		.button1 {background-color: #4CAF50;} /* Rectangle */
-		.button2 {background-color: #008CBA;} /* Name */
-		</style>
-		</head>
-		<body>
-
-		<button class="button button1">Rectangle</button>
-		<button class="button button2">Name</button>
-
-		</body>
 		</html>
 		
 	<p> 
