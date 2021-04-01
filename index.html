@@ -101,8 +101,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			// Clear part of the canvas
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 			
-		  var img = document.getElementById("tulips");
-		  	ctx.drawImage(img,10,10);
+		  var tulips = new Image();
+			tulips.src = "https://homepages.cae.wisc.edu/~ece533/images/tulips.png";
+			tulips.onload = function() {
+    			context.drawImage(tulips, 0, 0);
+  			};
 		}
 	      }
 	    </script>
