@@ -73,20 +73,20 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<p><button onclick="canvas()">Draw Rectangle</button></p>
 	<p><button onclick="canvas()">Draw Name</button></p>
 	<p><button onclick="canvas()">Clear Canvas</button></p>
-	
+	<button onclick="draw_Rect();return true;">Rectangle</button> 
 	<p> 
  <!-- This is a skeleton template-->
 	<html>
 	  <head>
 	    <meta charset="utf-8"/>
 	    <title>Canvas</title>
-	    <script type="text/javascript">
+	    <script type="text/javascript"> 
 	function draw() {
 		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
 		  var ctx = canvas.getContext('2d');
 			// Draw rectangle
-			ctx.fillRect(50, 50, 100, 100);
+			ctx.fillRect(50, 20, 100, 120);
 			
 			// Draw my name
 			ctx.font = "35px serif";
