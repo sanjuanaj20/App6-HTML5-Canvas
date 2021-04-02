@@ -96,15 +96,20 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     </style>
   </head>
   <body>
-    <canvas id="myCanvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
-    <script>
-	var canvas = document.getElementById('myCanvas');
+     <!-- This is a skeleton template-->
+	<html>
+	  <head>
+	    <meta charset="utf-8"/>
+	    <title>Canvas</title>
+	    <script type="text/javascript"> 
+	function draw() {
+		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
-	var ctx = canvas.getContext('2d');
-	    	// Draw rectangle
+		  var ctx = canvas.getContext('2d');
+			// Draw rectangle
 			ctx.fillRect(50, 70, 100, 120);
 			
-		// Draw my name
+			// Draw my name
 			ctx.font = "35px serif";
 			ctx.textBaseline = "hanging";
 			ctx.strokeText("San Juana Juarez", 10, 10);
@@ -115,14 +120,27 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			ctx.lineTo(103, 76);
 			ctx.lineTo(170, 15);
 			ctx.stroke();
-	    	
-	    	// Draw image
+			
+			// Clear part of the canvas
+			ctx.clearRect(300, 225, canvas.width, canvas.height);
+			
+		var img = document.getElementById("tulips"); 
 
-      		// bind event handler to clear button
-    			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			// Draw image
+  			ctx.drawImage(img,150,150);
 		}
-	    }
+	      }
+	
 	    </script>
+	    <style type="text/css">
+	      canvas { border: 1px solid black; }
+	    </style>
+	  </head>
+	  <body onload="draw();">
+	    <canvas id="canvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
+	    <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="10" height="10">
+	  </body>
+	</html>
 	<p> 
 
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
