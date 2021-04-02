@@ -88,7 +88,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     </style>
   </head>
   <body>
-    <img id="tulip" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="25" height="25">  
     <canvas id="myCanvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
     <div id="buttons">
       <input type="button" id="clear" value="Clear">
@@ -113,13 +112,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	    	
 	    	// Draw image
   		tulip.src = "https://homepages.cae.wisc.edu/~ece533/images/tulips.png";
-    			ctx.drawImage(tulip, 0, 0);
+    			ctx.drawImage(tulip, 200, 200);
 
       		// bind event handler to clear button
-      		document.getElementById('clear').addEventListener('click', 
-	function() {
-        	ctx.clearRect(0, 0, canvas.width, canvas.height);
-		}, false);
+    			ctx.clearRect(0, 0, canvas.width, canvas.height);
+		}
 	    </script>
 	<p> 
 
