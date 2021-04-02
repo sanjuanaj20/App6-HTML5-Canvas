@@ -67,6 +67,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<h1>App6---HTML5-Canvas</h1>
 </div>
 	
+<div id="content" class="w3-container">
+	
+	<p><button onclick="canvas()">Draw Image</button></p>
+	<p><button onclick="canvas()">Draw Rectangle</button></p>
+	<p><button onclick="canvas()">Draw Name</button></p>
+	<p><button onclick="canvas()">Clear Canvas</button></p>
+	<button onclick="draw();return true;">Rectangle</button> 
+	<p> 	
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -89,12 +97,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   </head>
   <body>
     <canvas id="myCanvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
-    <div id="buttons">
-      <input type="button" id="clear" value="Clear">
-    <img id="source"
-       src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png"
-       width="100" height="100">    
-    </div>
     <script>
       var canvas = document.getElementById('myCanvas');
       var ctx = canvas.getContext('2d');
