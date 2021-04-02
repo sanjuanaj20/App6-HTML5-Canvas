@@ -94,7 +94,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     </div>
     <script>
       var canvas = document.getElementById('myCanvas');
-	if (canvas.getContext) {
       var ctx = canvas.getContext('2d');
 			
 	    	// Draw rectangle
@@ -113,9 +112,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			ctx.stroke();
   
 
-      // bind event handler to clear button
-      document.getElementById('clear').addEventListener('click', function() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      		// bind event handler to clear button
+      		document.getElementById('clear').addEventListener('click', function() {
+        		ctx.clearRect(0, 0, canvas.width, canvas.height);
+			
+	var img = document.getElementById("tulips"); 
+		// Draw image
+  			ctx.drawImage(img,150,150);
       }, false);
 	    </script>
 	<p> 
