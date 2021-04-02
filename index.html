@@ -95,22 +95,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     <script>
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
-
-      // begin custom shape
-		     context.beginPath();
-      context.moveTo(170, 80);
-      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
-      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
-      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
-      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
-      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
-      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
-
-      // complete custom shape
-      context.closePath();
-      context.lineWidth = 5;
-      context.strokeStyle = 'blue';
-      context.stroke();
+			
+	    	// Draw rectangle
+			ctx.fillRect(50, 70, 100, 120);
+			
+		// Draw my name
+			ctx.font = "35px serif";
+			ctx.textBaseline = "hanging";
+			ctx.strokeText("San Juana Juarez", 10, 10);
+			ctx.drawImage(img, 0, 0);
+    			ctx.beginPath();
+			ctx.moveTo(30, 96);
+			ctx.lineTo(70, 66);
+			ctx.lineTo(103, 76);
+			ctx.lineTo(170, 15);
+			ctx.stroke();
+  
 
       // bind event handler to clear button
       document.getElementById('clear').addEventListener('click', function() {
