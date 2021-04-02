@@ -81,6 +81,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	    <meta charset="utf-8"/>
 	    <title>Canvas</title>
 	    <script type="text/javascript"> 
+	<style type="text/css">
+	      canvas { border: 1px solid black; }
+	    </style>
+	  </head>
+	  <body onload="draw();">
+	    <canvas id="canvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
+	    <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="10" height="10">
+	  </body>
+	</html>
 	function draw() {
 		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
@@ -111,15 +120,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	      }
 	
 	    </script>
-	    <style type="text/css">
-	      canvas { border: 1px solid black; }
-	    </style>
-	  </head>
-	  <body onload="draw();">
-	    <canvas id="canvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
-	    <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="10" height="10">
-	  </body>
-	</html>
 	<p> 
 
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
