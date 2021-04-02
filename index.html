@@ -88,7 +88,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     </style>
   </head>
   <body>
-    <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="10" height="10">  
+    <img id="tulip" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="10" height="10">  
     <canvas id="myCanvas" width="300" height="225" style="border:1px solid #000000;">></canvas>
     <div id="buttons">
       <input type="button" id="clear" value="Clear">
@@ -111,7 +111,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			ctx.lineTo(103, 76);
 			ctx.lineTo(170, 15);
 			ctx.stroke();
-  
+	    // Draw image		  
+	    window.onload = function() {
+		  var canvas = document.getElementById("myCanvas");
+		  var ctx = canvas.getContext("2d");
+		  var tulip = document.getElementById("tulip");
+		  context.drawImage(tulip, 0, 0);
+
 
       		// bind event handler to clear button
       		document.getElementById('clear').addEventListener('click', 
