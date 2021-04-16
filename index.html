@@ -105,11 +105,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
 		  var ctx = canvas.getContext('2d');
-     		var tulips = new Image();
-  		tulips.src = "https://homepages.cae.wisc.edu/~ece533/images/tulips.png";
-  		tulips.onload = function() {
-    		
-			ctx.drawImage(tulips, 0, 0);
 			
 			// Draw rectangle
 			ctx.fillRect(50, 70, 100, 120);
@@ -125,11 +120,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			ctx.lineTo(103, 76);
 			ctx.lineTo(170, 15);
 			ctx.stroke();
-			
+		}
 			// Clear part of the canvas
 			
 			// Draw image
- 			   ctx.drawImage(img, 0, 0, 40, 40);
+ 	window.onload = function() {
+  		var canvas = document.getElementById("canvas");
+  		var context = canvas.getContext("2d");
+		var tulips = document.getElementById('tulips');
+  			ctx.drawImage(tulips, 0, 0);
+
 		}
 		}
 	    </script>
