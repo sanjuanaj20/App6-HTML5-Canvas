@@ -89,7 +89,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     </style>
   </head>
   <body>
-     <!-- This is a skeleton template-->
+          <!-- This is a skeleton template-->
 	<html>
 	  <head>
 	    <meta charset="utf-8"/>
@@ -99,7 +99,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
 		  var ctx = canvas.getContext('2d');
-	
+		var img = document.getElementById("tulips");
 			// Draw rectangle
 			ctx.fillRect(50, 70, 100, 120);
 			
@@ -114,22 +114,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			ctx.lineTo(103, 76);
 			ctx.lineTo(170, 15);
 			ctx.stroke();
-		}
+			
 			// Clear part of the canvas
+			ctx.clearRect(300, 225, canvas.width, canvas.height);
 			
 			// Draw image
-
-
+  			ctx.drawImage(img,150,150);
 		}
-		}
+	      }
+	
 	    </script>
-
 	    <style type="text/css">
 	      canvas { border: 1px solid black; }
 	    </style>
 	  </head>
 	  <body onload="draw();">
-	    <canvas id="canvas" width="500" height="350" style="border:1px solid #000000;" onclick="draw();return false">></canvas>
+	    <canvas id="canvas" width="400" height="350" style="border:1px solid #000000;" onclick="draw();return false">></canvas>
 	    <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="40" height="40">
 	  </body>
 	</html>
