@@ -39,8 +39,31 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
 </script>
-
-
+	
+<script> 
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	
+	// Draw rectangle
+	function draw(){
+		ctx.fillRect(50, 70, 100, 120);
+		
+	}
+	// Draw my name		
+	function draw(){		
+		ctx.font = "35px serif";
+		ctx.textBaseline = "hanging";
+		ctx.strokeText("San Juana Juarez", 10, 10);
+		ctx.drawImage(img, 0, 0);
+    		ctx.beginPath();
+		ctx.moveTo(30, 96);
+		ctx.lineTo(70, 66);
+		ctx.lineTo(103, 76);
+		ctx.lineTo(170, 15);
+		ctx.stroke();
+	}
+	
+</script>
 
 <style>	
 .body {
@@ -88,33 +111,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     </style>
   </head>
   <body>
-     <!--template-->
-	    <title>Canvas</title>
-<script> 
-	var canvas = document.getElementById('canvas');
-	var ctx = canvas.getContext('2d');
-	
-	// Draw rectangle
-	function draw(){
-		ctx.fillRect(50, 70, 100, 120);
-		
-	}
-	// Draw my name		
-	function draw(){		
-		ctx.font = "35px serif";
-		ctx.textBaseline = "hanging";
-		ctx.strokeText("San Juana Juarez", 10, 10);
-		ctx.drawImage(img, 0, 0);
-    		ctx.beginPath();
-		ctx.moveTo(30, 96);
-		ctx.lineTo(70, 66);
-		ctx.lineTo(103, 76);
-		ctx.lineTo(170, 15);
-		ctx.stroke();
-	}
-	
-</script>
-	    <style type="text/css">
+
+	   <style type="text/css">
 	      canvas { border: 1px solid black; }
 	    </style>
 	  </head>
