@@ -98,7 +98,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	function draw() {
 		var canvas = document.getElementById("canvas");
 		var context = canvas.getContext("2d");
-			ctx.fillRect(50, 70, 100, 120);
+
 			// Draw rectangle
 			ctx.fillRect(50, 70, 100, 120);
 			// Draw my name
@@ -111,13 +111,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			ctx.lineTo(70, 66);
 			ctx.lineTo(103, 76);
 			ctx.lineTo(170, 15);
-			ctx.stroke();
-			
-			// Clear part of the canvas
-			ctx.clearRect(300, 225, canvas.width, canvas.height);
-			
-			// Draw image
-  			ctx.drawImage(img,150,150);
+			ctx.stroke();			
 		}
 	      }
 	
