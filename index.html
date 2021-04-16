@@ -105,7 +105,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var canvas = document.getElementById('canvas');
 		if (canvas.getContext) {
 		  var ctx = canvas.getContext('2d');
-		var img = document.getElementById("tulips");
+		  var img = document.getElementById("tulips");
 
 			// Draw rectangle
 			ctx.fillRect(50, 70, 100, 120);
@@ -126,7 +126,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			ctx.clearRect(300, 225, canvas.width, canvas.height);
 			
 			// Draw image
-			img.addEventListener('load', e => {
  			   ctx.drawImage(img, 33, 71, 104, 124, 21, 20, 87, 104);
 	
 		}
