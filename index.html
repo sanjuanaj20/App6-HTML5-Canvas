@@ -88,17 +88,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     </style>
   </head>
   <body>
-     <!-- This is a skeleton template-->
+     <!--Template-->
 	<html>
 	  <head>
 	    <meta charset="utf-8"/>
 	    <title>Canvas</title>
 	    <script type="text/javascript"> 
-	function draw() {
-		var canvas = document.getElementById('canvas');
-		var ctx = canvas.getContext('2d');
+	function draw_a() {
+		var a_canvas = document.getElementById('a');
+		var a_ctx = a_canvas.getContext('2d');
 			// Draw rectangle
-			ctx.fillRect(50, 70, 100, 120);
+			a_ctx.fillRect(50, 70, 100, 120);
+	}
 		
 			// Draw my name
 			ctx.font = "35px serif";
@@ -125,7 +126,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	    </style>
 	  </head>
 	  <body onload="draw();">
-	    <canvas id="canvas" width="300" height="225" style="border:1px solid #000000;" onclick="draw();return false">></canvas>
+	    <canvas id="a" width="300" height="225" style="border:1px solid #000000;" onclick="draw();return false">></canvas>
 	    <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="10" height="10">
 	  </body>
 	</html>
