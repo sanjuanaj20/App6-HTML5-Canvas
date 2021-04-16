@@ -37,18 +37,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
-var tulips = new Image();
-	tulips.addEventListener('load', eventTulipsLoad, false);
-	tulips.src = https:homepages.cae.wisc.edu/~ece533/images/tulips.png;
-	
-function draw_a() {
-	var a_canvas = document.getElementById("a");
-	var a_context = a_canvas.getContext("2d");
-	a_context.fillRect(50, 70, 100, 120);
-	
-	
-
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
 </script>
 
 
@@ -107,10 +96,9 @@ function draw_a() {
 	    <title>Canvas</title>
 	    <script type="text/javascript"> 
 	function draw() {
-		var canvas = document.getElementById('canvas');
-		if (canvas.getContext) {
-		  var ctx = canvas.getContext('2d');
-		var img = document.getElementById("tulips");
+		var a_canvas = document.getElementById("a");
+		var a_context = a_canvas.getContext("2d");
+		a_context.fillRect(50, 70, 100, 120);
 			// Draw rectangle
 			ctx.fillRect(50, 70, 100, 120);
 			
