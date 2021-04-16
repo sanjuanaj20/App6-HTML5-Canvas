@@ -129,8 +129,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  			   ctx.drawImage(img, 33, 71, 104, 124, 21, 20, 87, 104);
 	
 		}
-	      }
-	
+	function clear_canvas_rectangle ()
+	{
+    		ctx.clearRect (0, 0, 400, 350);
+    		// https://stackoverflow.com/a/50233691
+    		ctx.beginPath ();
+		  }
+		}
 	    </script>
 	    <style type="text/css">
 	      canvas { border: 1px solid black; }
