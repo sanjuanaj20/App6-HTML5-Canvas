@@ -96,12 +96,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	    <title>Canvas</title>
 	    <script type="text/javascript"> 
 	function draw() {
-		var a_canvas = document.getElementById("a");
-		var a_context = a_canvas.getContext("2d");
-		a_context.fillRect(50, 70, 100, 120);
+		var canvas = document.getElementById("canvas");
+		var context = canvas.getContext("2d");
+			ctx.fillRect(50, 70, 100, 120);
 			// Draw rectangle
 			ctx.fillRect(50, 70, 100, 120);
-			
 			// Draw my name
 			ctx.font = "35px serif";
 			ctx.textBaseline = "hanging";
@@ -128,7 +127,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	    </style>
 	  </head>
 	  <body onload="draw();">
-	    <canvas id="a" width="400" height="350" style="border:1px solid #000000;" onclick="draw();return false">></canvas>
+	    <canvas id="canvas" width="400" height="350" style="border:1px solid #000000;" onclick="draw();return false">></canvas>
 	    <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="40" height="40">
 	  </body>
 	</html>
