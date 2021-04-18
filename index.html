@@ -45,12 +45,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	var ctx = canvas.getContext('2d');
 	
 	// Draw rectangle
-	function draw(){
+	function draw_image(){
 		ctx.fillRect(50, 70, 100, 120);
 		
 	}
 	// Draw my name		
-	function draw_nam(){		
+	function draw_name(){		
 		ctx.font = "35px serif";
 		ctx.textBaseline = "hanging";
 		ctx.strokeText("San Juana Juarez", 10, 10);
@@ -113,10 +113,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   <body>
 
     	<div id="content" class="w3-container">
-		<center><canvas id="canvas" width="300" height="225" style="border:1px solid #000000;">></canvas><center>
+		<center><canvas id="canvas" width="500" height="350" style="border:1px solid #000000;">></canvas><center>
 		
-		<center><button onclick = draw();">Draw Rectangle</button><center>
+		<center><button onclick = draw_image();">Draw Rectangle</button><center>
 			
+		<center><button onclick = draw_name();">Draw San Juana</button><center>
+
 	 <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="10" height="10">
 
 
