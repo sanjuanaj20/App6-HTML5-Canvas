@@ -41,9 +41,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </script>
 	
 <script> 
-function draw_canvas(){
-	var canvas = document.getElementById('canvas');
-	var ctx = canvas.getContext('2d');
+function draw_a(){
+	var a = document.getElementById('a');
+	var ctx = a.getContext('2d');
 	
 	// Draw rectangle
 	function draw_image(){
@@ -114,7 +114,7 @@ function draw_canvas(){
   <body>
 
     	<div id="content" class="w3-container">
-		<center><canvas id="canvas" width="500" height="350" style="border:1px solid #000000;">></canvas><center>
+		<center><canvas id="a" width="500" height="350" style="border:1px solid #000000;">></canvas><center>
 		
 		<center><button onclick = draw_image();">Draw Rectangle</button><center>
 			
