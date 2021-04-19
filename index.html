@@ -90,7 +90,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     	<div id="content" class="w3-container">
 		<canvas id="myCanvas" width="500" height="350" style="border:1px solid #000000;">></canvas>
 		<script>
-		function draw( {
+		function draw() {
 			var canvas = document.getElementById('myCanvas');
 			if (canvas.getContext) {
         		   var context = canvas.getContext("2d");
@@ -99,7 +99,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			}
 		}
 			// Draw my name	
-		function drawText(
+		function drawText(){
        			context.font = '20pt Calibri';
         		context.fillStyle = "black";
         		context.fillText("San Juana Juarez", 10, 20);	
