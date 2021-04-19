@@ -43,25 +43,27 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <script> 
 function draw_a(){
 	var a = document.getElementById('a');
-	var ctx = a_canvas.getContext('2d');
+	var context = a_canvas.getContext('2d');
 	
 	// Draw rectangle
-	function draw_image(){
-		a_ctx.fillRect(50, 70, 100, 120);
-	}	
+	function draw_a() {
+  	var a_canvas = document.getElementById("a");
+ 	var a_context = a_canvas.getContext("2d");
+ 	a_context.fillRect(50, 25, 150, 100);
+	}
 	
 	// Draw my name		
 	function draw_name(){		
-		a_ctx.font = "35px serif";
-		a_ctx.textBaseline = "hanging";
-		a_ctx.strokeText("San Juana Juarez", 10, 10);
-		a_ctx.drawImage(img, 0, 0);
-    		a_ctx.beginPath();
-		a_ctx.moveTo(30, 96);
-		a_ctx.lineTo(70, 66);
-		a_ctx.lineTo(103, 76);
-		a_ctx.lineTo(170, 15);
-		a_ctx.stroke();
+		a_context.font = "35px serif";
+		a_context.textBaseline = "hanging";
+		a_context.strokeText("San Juana Juarez", 10, 10);
+		a_context.drawImage(img, 0, 0);
+    		a_context.beginPath();
+		a_context.moveTo(30, 96);
+		a_context.lineTo(70, 66);
+		a_context.lineTo(103, 76);
+		a_context.lineTo(170, 15);
+		a_context.stroke();
 	}
 	
 </script>
@@ -112,9 +114,6 @@ function draw_a(){
     </style>
   </head>
   <body>
-<form>
-	<input type="button" name="test" value="Click me" onclick="draw_name()">
-</form>
 
     	<div id="content" class="w3-container">
 		<center><canvas id="a" width="500" height="350" style="border:1px solid #000000;">></canvas><center>
