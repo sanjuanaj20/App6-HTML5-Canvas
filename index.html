@@ -39,31 +39,6 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
 </script>
-<script>
-function draw(){	
-var a_canvas = document.getElementById('a');
-if (a_canvas.getContext) {
-	var ctx = a_canvas.getContext('2d');
-
-	// Draw rectangle
-	
-  		ctx.fillRect(50, 25, 150, 100);
-	
-	// Draw my name				
-		ctx.font = "35px serif";
-		ctx.textBaseline = "hanging";
-		ctx.strokeText("San Juana Juarez", 10, 10);
-		ctx.drawImage(img, 0, 0);
-    		ctx.beginPath();
-		ctx.moveTo(30, 96);
-		ctx.lineTo(70, 66);
-		ctx.lineTo(103, 76);
-		ctx.lineTo(170, 15);
-		ctx.stroke();
-	}
-}
-	
-</script>
 
 <style>	
 .body {
@@ -114,6 +89,31 @@ if (a_canvas.getContext) {
 
     	<div id="content" class="w3-container">
 		<center><canvas id="a" width="500" height="350" style="border:1px solid #000000;">></canvas><center>
+			<script>
+			function draw(){	
+			var a_canvas = document.getElementById('a');
+			if (a_canvas.getContext) {
+				var ctx = a_canvas.getContext('2d');
+
+			// Draw rectangle
+	
+  				ctx.fillRect(50, 25, 150, 100);
+	
+			// Draw my name				
+				ctx.font = "35px serif";
+				ctx.textBaseline = "hanging";
+				ctx.strokeText("San Juana Juarez", 10, 10);
+				ctx.drawImage(img, 0, 0);
+    				ctx.beginPath();
+				ctx.moveTo(30, 96);
+				ctx.lineTo(70, 66);
+				ctx.lineTo(103, 76);
+				ctx.lineTo(170, 15);
+				ctx.stroke();
+		}
+	}
+	
+</script>
 		
 		<center><button onclick = draw_a();">Draw Rectangle</button><center>
 
