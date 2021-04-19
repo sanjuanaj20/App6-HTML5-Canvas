@@ -88,31 +88,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   <body>
 
     	<div id="content" class="w3-container">
-		<center><canvas id="myCanvas" width="500" height="350" style="border:1px solid #000000;">></canvas><center>
+		<canvas id="myCanvas" width="500" height="350" style="border:1px solid #000000;">></canvas>
 		<script>	
 			var canvas = document.getElementById('myCanvas');
-			var ctx = canvas.getContext('2d');
+        		var context = canvas.getContext("2d");
+			context.fillRect(50, 25, 150, 100);
+       			context.font = '20pt Calibri';
+        		context.fillStyle = "black";
+        		context.fillText("San Juana Juarez", 10, 20);
+        </script>
 
-			// Draw rectangle
-	
-  				ctx.fillRect(50, 25, 150, 100);
-	
-			// Draw my name				
-				ctx.font = "35px serif";
-				ctx.textBaseline = "hanging";
-				ctx.strokeText("San Juana Juarez", 10, 10);
-				ctx.drawImage(img, 0, 0);
-    				ctx.beginPath();
-				ctx.moveTo(30, 96);
-				ctx.lineTo(70, 66);
-				ctx.lineTo(103, 76);
-				ctx.lineTo(170, 15);
-				ctx.stroke();
-		}
-	}
-	
-		</script>
-		
 		<center><button onclick = draw_a();">Draw Rectangle</button><center>
 
 		<center><button onclick = draw_name();">Draw San Juana</button><center>
