@@ -108,7 +108,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 			var canvas = document.getElementById('myCanvas');
         		var context = canvas.getContext("2d");
 			var img = new Image();   // Create new img element
-			img.src = 'https://homepages.cae.wisc.edu/~ece533/images/tulips.png';
+			img.onload = function() {
+    			context.drawImage(img, 0, 0);
+    			context.beginPath();
+    			context.moveTo(30, 96);
+    			context.lineTo(70, 66);
+    			context.lineTo(103, 76);
+    			context.lineTo(170, 15);
+ 			context.stroke();
+ 		 };
+  			img.src = 'https://homepages.cae.wisc.edu/~ece533/images/tulips.png"';
 			// Draw image via url
 		}
         </script>
