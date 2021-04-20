@@ -88,43 +88,43 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   <body>
 
     	<div id="content" class="w3-container">
-		<canvas id="myCanvas" width="500" height="350" style="border:1px solid #000000;">></canvas>
-		<script>
+		<canvas id="myCanvas" width="500" height="350" style="border:1px solid #000000;">></canvas><!--uploads bordered canvas called "myCanvas"-->
+		<script>/* This script starts the canvas and puts the drawing, text, and image on the canvas "myCanvas" it also has function to reset canvas */
 		function myFunction(){
 			var canvas = document.getElementById('myCanvas');
         		var context = canvas.getContext("2d");
-			// Draw rectangle	
+			// function that draws a filled rectangle	
 			context.fillRect(75, 80, 200, 150);
 		}
 		function myFunction2(){
 			var canvas = document.getElementById('myCanvas');
         		var context = canvas.getContext("2d");
-			// Draw my name	
+			// Function that draws my name	
        			context.font = '20pt Calibri';
-        		context.fillStyle = "black";
+        		context.fillStyle = "pink";
         		context.fillText("San Juana Juarez", 10, 20);	
 		}
 		function myFunction3(){
 			var canvas = document.getElementById('myCanvas');
         		var context = canvas.getContext("2d");
-			
+			// function thats uploads the image into canvas		
   			context.drawImage(document.getElementById('tulips'),
                 			100,250, 100, 100);
 		}
 		function myFunction4(){
 			var canvas = document.getElementById('myCanvas');
         		var context = canvas.getContext("2d");
-			// Draw rectangle	
+			// function that clears canvas	
 			context.clearRect(0, 0, 500, 500);
 		}
         </script>
-
-		<button onclick="myFunction()">Draw Rectangle</button>
+		<!--buttons for each of the 4 functons in script-->
+		<button onclick="myFunction()">Draw Rectangle</button> 
 		<button onclick="myFunction2()">Draw San Juana</button>
 		<button onclick="myFunction3()">Draw Tulips</button>
 		<button onclick="myFunction4()">Clear Canvas</button>
 
-
+	<!--image to upload to canvas for function4-->
 	 <img id="tulips" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png" alt="The Tulips" width="40" height="40">
 
 
